@@ -1,4 +1,5 @@
 How to Deploy a Node.js App to Heroku
+See demo: https://hello-heroku-node.herokuapp.com/
 # Getting Started
 - Go ahead and go to [Heroku.com](Heroku.com) and create your free account.
 - Tools needed: [Node.js](http://nodejs.org/) and npm, [Heroku Toolbelt](https://toolbelt.heroku.com/), Git bash
