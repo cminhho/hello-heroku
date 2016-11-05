@@ -1,41 +1,39 @@
 How to Deploy a Node.js App to Heroku
 # Getting Started
-- Go ahead and go to Heroku.com and create your free account.
-- Tools needed: Node and npm, Heroku Toolbet, Git bash
-- Login into Heroku: $ heroku login
+- Go ahead and go to [Heroku.com](Heroku.com) and create your free account.
+- Tools needed: [Node.js](http://nodejs.org/) and npm, [Heroku Toolbelt](https://toolbelt.heroku.com/), Git bash
 
-# Creating a Simple Node Application
-- Creating a your application: use a git repo
-- Update package.json
+# Creating a Simple Node Application & Running Locally
 
-{
-  "name": "hello-heroku",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {}
-}
+```sh
+$ git clone git@github.com:heroku/hello-heroku.git # or clone your own fork
+$ cd hello-heroku
+$ npm install
+$ npm start
+```
 
-- Install npm package and bower dependencies
-- Next up is our server.js file.
-- Run: $ node server.js
+Your app should now be running on [localhost:8080](http://localhost:8080/).
+
 ### Deploy your node app
 
 ```
+$ heroku login
 $ heroku create
-$ $ heroku apps:rename hello-heroku --app <your app name>
+$ heroku apps:rename hello-heroku --app <your app name>
 $ git push heroku master
 $ heroku open
 ```
 
 # Using a Current Heroku App
-- Download the Heroku Toolbelt
+
+```
 - Login: $heroku login
 - Add your public key: heroku keys:add
 - Pull down your current application: $ heroku git:clone -a app-name
 - Make your improvements
 - Git add and commit your$  changes
 - Push back to heroku: $ git push heroku master
+```
 
 # References
 - https://devcenter.heroku.com/articles/getting-started-with-nodejs
