@@ -9,7 +9,7 @@ How to Deploy a Node.js App to Heroku
 $ git clone git@github.com:heroku/hello-heroku.git # or clone your own fork
 $ cd hello-heroku
 $ npm install
-$ npm start
+$ node server.js
 ```
 
 Your app should now be running on [localhost:8080](http://localhost:8080/).
