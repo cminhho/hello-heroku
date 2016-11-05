@@ -14,7 +14,7 @@ $ node server.js
 
 Your app should now be running on [localhost:8080](http://localhost:8080/).
 
-### Deploy your node app
+# Deploy your node app
 
 ```
 $ heroku login
