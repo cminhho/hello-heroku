@@ -20,15 +20,13 @@ How to Deploy a Node.js App to Heroku
 - Next up is our server.js file.
 - Run: $ node server.js
 ### Deploy your node app
-- Create the remote repo: $ heroku create
-- Rename your application: $ heroku apps:rename hello-heroku --app <your app name>
 
-### Deploying code: 
-- $ git push heroku master
-
-### View your application in browser
-- $ heroku open
-- Go ahead and visit that in browser: http://hello-heroku.herokuapp.com
+```
+$ heroku create
+$ $ heroku apps:rename hello-heroku --app <your app name>
+$ git push heroku master
+$ heroku open
+```
 
 # Using a Current Heroku App
 - Download the Heroku Toolbelt
@@ -40,4 +38,5 @@ How to Deploy a Node.js App to Heroku
 - Push back to heroku: $ git push heroku master
 
 # References
+- https://devcenter.heroku.com/articles/getting-started-with-nodejs
 - https://scotch.io/tutorials/how-to-deploy-a-node-js-app-to-heroku
